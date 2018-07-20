@@ -1,23 +1,18 @@
-<div class="copyright" >
-  {% assign current = site.time | date: '%Y' %}
-  {% assign since = site.since | downcase %}
-  &copy; {% if site.since and since != current %} {{ since }} - {% endif %}
-  <span itemprop="copyrightYear">{{ current }}</span>
-  <span class="with-love">
-    <i class="fa fa-{{ site.authoricon }}"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">{{ site.author }}</span>
-</div>
-
-{% if site.copyright %}
-<div class="powered-by">
-  {{ __.footer.powered | replace: '%s', '<a class="theme-link" href="https://jekyllrb.com">Jekyll</a>') }}
-</div>
-
-<div class="theme-info">
-  {{ __.footer.theme }} -
-  <a class="theme-link" href="https://github.com/simpleyyt/jekyll-theme-next">
-    NexT.{{ site.scheme }}
-  </a>
-</div>
-{% endif %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1561.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; line-height: 14.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">{% assign current = site.time | date: '%Y' %} {% assign since = site.since | downcase %} © {% if site.since and since != current %} {{ since }} - {% endif %} {{ current }} {{ site.author }}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% endif %}<span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
